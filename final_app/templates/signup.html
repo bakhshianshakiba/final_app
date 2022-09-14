@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h3>Sign Up</h3>
+<br>
+{% crispy form %}
+<br>
+<body>Already have an account? <a href="{% url 'login' %}">Login</a> </body>
+{% endblock %}
